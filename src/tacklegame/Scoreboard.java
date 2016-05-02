@@ -13,7 +13,7 @@ public class Scoreboard extends JPanel{
     //Default constructor creates a scoreboard and displays the scores
     public Scoreboard(){
         super();
-        scores = new JTextField("Touchdowns: 0 Tackles: 0" );
+        scores = new JTextField();
         add(scores);
        }
 
@@ -31,7 +31,8 @@ public class Scoreboard extends JPanel{
         this.scores = scores;
     }
     
-    public void updateScores(String display){
-        scores.setText(display);
+    public void updateScores(int touchdowns, int tackles){
+        scores.setText("Touchdowns: " + touchdowns + " Tackles: " + tackles);
     }
+    
 }
