@@ -2,20 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/brian.kirby/OneDrive/Documents/NetBeansProjects/TackleGame_MVC/src/tacklegame/TModel.java</file>
-            <file>file:/C:/Users/brian.kirby/OneDrive/Documents/NetBeansProjects/TackleGame_MVC/src/tacklegame/Scoreboard.java</file>
-            <file>file:/C:/Users/brian.kirby/OneDrive/Documents/NetBeansProjects/TackleGame_MVC/src/tacklegame/Endzone.java</file>
-            <file>file:/C:/Users/brian.kirby/OneDrive/Documents/NetBeansProjects/TackleGame_MVC/src/tacklegame/TController.java</file>
-            <file>file:/C:/Users/brian.kirby/OneDrive/Documents/NetBeansProjects/TackleGame_MVC/src/tacklegame/Field.java</file>
-            <file>file:/C:/Users/brian.kirby/OneDrive/Documents/NetBeansProjects/TackleGame_MVC/src/tacklegame/RunningBack.java</file>
-            <file>file:/C:/Users/brian.kirby/OneDrive/Documents/NetBeansProjects/TackleGame_MVC/src/tacklegame/ControlPanel.java</file>
-            <file>file:/C:/Users/brian.kirby/OneDrive/Documents/NetBeansProjects/TackleGame_MVC/src/tacklegame/Sideline.java</file>
-            <file>file:/C:/Users/brian.kirby/OneDrive/Documents/NetBeansProjects/TackleGame_MVC/src/tacklegame/Player.java</file>
-            <file>file:/C:/Users/brian.kirby/OneDrive/Documents/NetBeansProjects/TackleGame_MVC/src/tacklegame/InitialPanel.java</file>
-            <file>file:/C:/Users/brian.kirby/OneDrive/Documents/NetBeansProjects/TackleGame_MVC/src/tacklegame/TackleGame.java</file>
-            <file>file:/C:/Users/brian.kirby/OneDrive/Documents/NetBeansProjects/TackleGame_MVC/src/tacklegame/Tackler.java</file>
-            <file>file:/C:/Users/brian.kirby/OneDrive/Documents/NetBeansProjects/TackleGame_MVC/src/tacklegame/InitialFrame.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

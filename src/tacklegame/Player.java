@@ -6,64 +6,57 @@ It can move left, right, up, and down
  */
 package tacklegame;
 
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.Rectangle;
-import javax.swing.JButton;
 
-public abstract class Player extends JButton{
+public abstract class Player extends Rectangle{
 
         private int playerSize = 20;
         private String playerNumber = "1";
         private int playerSpeed = 1;
         
     public Player() {
-        super("Player");
+        super();
         Rectangle pos = new Rectangle(0,0, playerSize, playerSize);
         setBounds(pos);
-        setBackground(Color.black);
     }
     
     public Player(Point startLoc){
         super();
         Rectangle pos = new Rectangle(startLoc, new Dimension(playerSize, playerSize));
         setBounds(pos);
-        setBackground(Color.black);
     }
 
     public Player(Point startLoc, int newSpeed){
         super();
         Rectangle pos = new Rectangle(startLoc, new Dimension(playerSize, playerSize));
         setBounds(pos);
-        setBackground(Color.black);
         playerSpeed = newSpeed;
     }    
     
 
     public void moveLeft(){
-        setLocation((getX()- getPlayerSpeed()), (getY()));
-        repaint();
+        translate(0 - (getPlayerSpeed()), 0);
     }
     
     public void moveRight(){
-        setLocation((getX()+ getPlayerSpeed()), (getY()));
-        repaint();
+        translate(getPlayerSpeed(), 0);
+        //setLocation((getX()+ getPlayerSpeed()), (getY()));
     }
     
     public void moveUp(){
-        setLocation((getX()), (getY()- getPlayerSpeed()));
-        repaint();
+        translate(0, (0 - getPlayerSpeed()));
+        //setLocation((getX()), (getY()- getPlayerSpeed()));
     }
     
     public void moveDown(){
-        setLocation((getX()), (getY()+ getPlayerSpeed()));
-        repaint();
+        translate(0, getPlayerSpeed());
+        //setLocation((getX()), (getY()+ getPlayerSpeed()));
     }
     
     public void setPos(int x, int y){
         setLocation(x, y);
-        repaint();
     }
     
     /**
@@ -94,7 +87,6 @@ public abstract class Player extends JButton{
      */
     public void setPlayerNumber(String playerNumber) {
         this.playerNumber = playerNumber;
-        this.setText(playerNumber);
     }
 
     /**

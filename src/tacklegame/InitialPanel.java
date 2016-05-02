@@ -22,11 +22,9 @@ public class InitialPanel extends JPanel{
         myScoreboard = new Scoreboard();
         myField = new Field();
         
-        //The field has references to the control panel for speed and scoreboard for score
         add(myField, BorderLayout.CENTER);
         add(myControlPanel, BorderLayout.NORTH);
         add(myScoreboard, BorderLayout.SOUTH);
-        
     }
 
     /**

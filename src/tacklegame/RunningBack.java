@@ -20,9 +20,7 @@ public class RunningBack extends Player {
     
     public RunningBack(Point startLoc, int newSpeed){
         super(startLoc, newSpeed);
-        setVisible(true);
-        setBackground(Color.blue);
-        
+
     }
     
     //Method to move the runningback based on the location of the enzones and sidelines

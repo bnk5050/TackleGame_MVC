@@ -4,7 +4,6 @@ It handles movement differently than the runningback and has a different color
  */
 package tacklegame;
 
-import java.awt.Color;
 import java.awt.Point;
 
 public class Tackler extends Player{
@@ -18,8 +17,6 @@ public class Tackler extends Player{
     
     public Tackler(Point startLoc, int tackleSpeed) {
         super(startLoc, tackleSpeed);
-        setBackground(Color.red);
-        setVisible(true);
         
     }
     

@@ -28,10 +28,10 @@ public class TModel {
         private final int TACKLE_THREE_SIZE = 40;
         
         //Pre-determined start locations for each player
-        private Point rbStart = new Point(50, 50); 
-        private Point t1Start = new Point(300, 100); 
-        private Point t2Start = new Point(200, 200);
-        private Point t3Start = new Point(300, 300);
+        private Point rbStart = new Point(200, 200); 
+        private Point t1Start = new Point(510, 100); 
+        private Point t2Start = new Point(700, 200);
+        private Point t3Start = new Point(720, 330);
             
         //Default speeds for the running back and the tackles
         
@@ -46,7 +46,7 @@ public class TModel {
         private Sideline bottomSideline;
     
         //Create the runningback and tacklers
-        RunningBack rb;
+        private RunningBack rb;
         private Tackler t1;
         private Tackler t2;
         private Tackler t3;
@@ -91,10 +91,10 @@ public class TModel {
     Creates the endzones based on x,y
     */
     private void createEndzones(){
-        setLeftEndzone(new Endzone(0, 10, 30, 330)); 
-        setRightEndzone(new Endzone(570, 10, 30, 330)); 
-        setTopSideline(new Sideline(0, 0, 600, 10));
-        setBottomSideline(new Sideline(0, 340, 600, 10));
+        setLeftEndzone(new Endzone(44, 0, 75, 410)); 
+        setRightEndzone(new Endzone(880, 0, 75, 410)); 
+        setTopSideline(new Sideline(0, 0, 1000, 2));
+        setBottomSideline(new Sideline(0, 408, 1000, 2));
     }
     
     /**
@@ -136,7 +136,7 @@ public class TModel {
     /**
     Resets the field based on the starting locations
     */
-    private void resetField(){
+    public void resetField(){
         rb.setLocation(rbStart);
         t1.setLocation(t1Start);
         t2.setLocation(t2Start);
@@ -176,7 +176,7 @@ public class TModel {
     /**
      * @param rb the rb to set
      */
-    public void setRb(RunningBack rb) {
+    private void setRb(RunningBack rb) {
         this.rb = rb;
     }
 
@@ -190,7 +190,7 @@ public class TModel {
     /**
      * @param t1 the t1 to set
      */
-    public void setT1(Tackler t1) {
+    private void setT1(Tackler t1) {
         this.t1 = t1;
     }
 
@@ -204,7 +204,7 @@ public class TModel {
     /**
      * @param t2 the t2 to set
      */
-    public void setT2(Tackler t2) {
+    private void setT2(Tackler t2) {
         this.t2 = t2;
     }
 
@@ -218,7 +218,7 @@ public class TModel {
     /**
      * @param t3 the t3 to set
      */
-    public void setT3(Tackler t3) {
+    private void setT3(Tackler t3) {
         this.t3 = t3;
     }
 
@@ -232,7 +232,7 @@ public class TModel {
     /**
      * @param leftEndzone the leftEndzone to set
      */
-    public void setLeftEndzone(Endzone leftEndzone) {
+    private void setLeftEndzone(Endzone leftEndzone) {
         this.leftEndzone = leftEndzone;
     }
 
@@ -246,7 +246,7 @@ public class TModel {
     /**
      * @param rightEndzone the rightEndzone to set
      */
-    public void setRightEndzone(Endzone rightEndzone) {
+    private void setRightEndzone(Endzone rightEndzone) {
         this.rightEndzone = rightEndzone;
     }
 
@@ -260,7 +260,7 @@ public class TModel {
     /**
      * @param topSideline the topSideline to set
      */
-    public void setTopSideline(Sideline topSideline) {
+    private void setTopSideline(Sideline topSideline) {
         this.topSideline = topSideline;
     }
 
@@ -274,7 +274,7 @@ public class TModel {
     /**
      * @param bottomSideline the bottomSideline to set
      */
-    public void setBottomSideline(Sideline bottomSideline) {
+    private void setBottomSideline(Sideline bottomSideline) {
         this.bottomSideline = bottomSideline;
     }
 
@@ -288,7 +288,7 @@ public class TModel {
     /**
      * @param numTouchdowns the numTouchdowns to set
      */
-    public void setNumTouchdowns(Integer numTouchdowns) {
+    private void setNumTouchdowns(Integer numTouchdowns) {
         this.numTouchdowns = numTouchdowns;
     }
 
@@ -302,7 +302,7 @@ public class TModel {
     /**
      * @param numTackles the numTackles to set
      */
-    public void setNumTackles(Integer numTackles) {
+    private void setNumTackles(Integer numTackles) {
         this.numTackles = numTackles;
     }
 }

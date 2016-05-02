@@ -16,8 +16,8 @@ public class InitialFrame extends JFrame{
     
     public InitialFrame (){
         super(); //Call JFame and pass game title
-        this.WINDOW_WIDTH = 650;
-        this.WINDOW_HEIGHT = 480;
+        this.WINDOW_WIDTH = 1000; //field is 1000px wide
+        this.WINDOW_HEIGHT = 520; //field is 410px tall
         this.GAME_TITLE = "Tackle Game";
         
         mp = new InitialPanel();
