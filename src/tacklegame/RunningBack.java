@@ -4,7 +4,6 @@ It has s different clolor and handles movement differently
  */
 package tacklegame;
 
-import java.awt.Color;
 import java.awt.Point;
 import java.awt.event.KeyEvent;
 

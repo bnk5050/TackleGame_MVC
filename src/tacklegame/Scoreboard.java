@@ -20,14 +20,14 @@ public class Scoreboard extends JPanel{
     /**
      * @return the scores
      */
-    public JTextField getScores() {
+    private JTextField getScores() {
         return scores;
     }
 
     /**
      * @param scores the scores to set
      */
-    public void setScores(JTextField scores) {
+    private void setScores(JTextField scores) {
         this.scores = scores;
     }
     

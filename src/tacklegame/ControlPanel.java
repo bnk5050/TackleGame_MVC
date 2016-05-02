@@ -20,7 +20,7 @@ public class ControlPanel extends JPanel {
     
     public ControlPanel() {
         super();
-        description = new JTextField("Set the speed of the game");
+        description = new JTextField("Set the speed of the tacklers");
         speedControl = new JSlider(JSlider.HORIZONTAL, 0, 10, 1);
         startButton = new JButton("Start");
         add(startButton);

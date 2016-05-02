@@ -27,7 +27,7 @@ public class TView {
     /**
      * @param frame the frame to set
      */
-    public void setFrame(InitialFrame frame) {
+    private void setFrame(InitialFrame frame) {
         this.frame = frame;
     }
     

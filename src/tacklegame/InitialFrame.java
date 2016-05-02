@@ -38,7 +38,7 @@ public class InitialFrame extends JFrame{
     /**
      * @param mp the mp to set
      */
-    public void setMp(InitialPanel mp) {
+    private void setMp(InitialPanel mp) {
         this.mp = mp;
     }
     

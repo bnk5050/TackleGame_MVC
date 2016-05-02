@@ -37,7 +37,7 @@ public class InitialPanel extends JPanel{
     /**
      * @param myControlPanel the myControlPanel to set
      */
-    public void setMyControlPanel(ControlPanel myControlPanel) {
+    private void setMyControlPanel(ControlPanel myControlPanel) {
         this.myControlPanel = myControlPanel;
     }
 
@@ -51,7 +51,7 @@ public class InitialPanel extends JPanel{
     /**
      * @param myScoreboard the myScoreboard to set
      */
-    public void setMyScoreboard(Scoreboard myScoreboard) {
+    private void setMyScoreboard(Scoreboard myScoreboard) {
         this.myScoreboard = myScoreboard;
     }
 
@@ -65,7 +65,7 @@ public class InitialPanel extends JPanel{
     /**
      * @param myField the myField to set
      */
-    public void setMyField(Field myField) {
+    private void setMyField(Field myField) {
         this.myField = myField;
     }
 }

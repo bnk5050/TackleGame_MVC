@@ -14,11 +14,12 @@ import javax.swing.JPanel;
 
 public class Field extends JPanel {
 
-    Rectangle rbRectangle;
-    Rectangle t1Rectangle;
-    Rectangle t2Rectangle;
-    Rectangle t3Rectangle;
-    ImageIcon fieldImage = new ImageIcon("images/FieldImage1000x410.png");
+    private Rectangle rbRectangle;
+    private Rectangle t1Rectangle;
+    private Rectangle t2Rectangle;
+    private Rectangle t3Rectangle;
+    
+    private final ImageIcon fieldImage = new ImageIcon("images/FieldImage1000x410.png");
             
     public Field() {
         super();
