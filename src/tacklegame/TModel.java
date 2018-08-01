@@ -13,7 +13,7 @@ import java.awt.event.KeyEvent;
  @author brian.kirby
  */
 public class TModel {
-        //Jersey numbers for the players
+        //Jersey numbers for the players.  Runningback is the user.  Tacklers are computer.
     
         private final String RUNNINGBACK_NUMBER = "3";
         private final String TACKLE_ONE_NUMBER = "9";

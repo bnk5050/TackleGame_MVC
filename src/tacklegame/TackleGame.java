@@ -20,7 +20,8 @@ public class TackleGame {
     public static void main(String[] args) {
         TModel TackleModel = new TModel();
         TView TackleView = new TView();
-        TController TackleController = new TController(TackleModel, TackleView);
+        TController TackleController = new TController(TackleModel, TackleView); //give controller access to model and view
+        
 
     }
     
