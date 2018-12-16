@@ -19,21 +19,21 @@ import javax.swing.event.ChangeListener;
  */
 public class TController {
     
-    private TModel model;
-    private TView view;
-    private Timer gameTimer;
-    private int delay = 200;
+    private TModel model;  //Declare TModel object named model
+    private TView view; //Declare TView object named view
+    private Timer gameTimer; //Declare Time object named gametimer 
+    private int delay = 200; //Set default key press delay
     
-    public TController(TModel model, TView view) {
-        this.model = model;
-        this.view = view;
-        newMovementListener();
+    public TController(TModel model, TView view) { //constructor that receives a model and view
+        this.model = model; //assigns received model reference to model object
+        this.view = view; //assigns recieved view reference
+        newMovementListener(); //calls listener methods
         newSettingsListener();     
         newButtonListener();
         
-        getField().requestFocusInWindow();
+        getField().requestFocusInWindow(); //
         
-        gameTimer = new Timer(delay, new ActionListener() {
+        gameTimer = new Timer(delay, new ActionListener() { //instantiates a Time object named gameTimer with inner listener
             @Override
             public void actionPerformed(ActionEvent ae) {
                 model.moveTackles();

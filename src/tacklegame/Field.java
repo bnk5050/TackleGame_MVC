@@ -37,7 +37,7 @@ public class Field extends JPanel {
     }
 
     public void updatePlayers (Rectangle rb, Rectangle t1, 
-        Rectangle t2, Rectangle t3){
+        Rectangle t2, Rectangle t3){ 
         rbRectangle = rb;
         t1Rectangle = t1;
         t2Rectangle = t2;
